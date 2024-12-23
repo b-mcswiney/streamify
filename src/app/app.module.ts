@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { MoviesComponent } from './movies/movies.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MoviedataComponent } from './moviedata/moviedata.component';
+import { FiltermoviesComponent } from './filtermovies/filtermovies.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MoviesComponent,
-    MoviedataComponent
+    MoviedataComponent,
+    FiltermoviesComponent
   ],
   imports: [
     BrowserModule,
