@@ -8,13 +8,21 @@ import { HttpClientModule } from '@angular/common/http';
 import { MoviedataComponent } from './moviedata/moviedata.component';
 import { FiltermoviesComponent } from './filtermovies/filtermovies.component';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { LoginComponent } from './login/login.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { MyreviewsComponent } from './myreviews/myreviews.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MoviesComponent,
     MoviedataComponent,
-    FiltermoviesComponent
+    FiltermoviesComponent,
+    HeaderComponent,
+    LoginComponent,
+    PagenotfoundComponent,
+    MyreviewsComponent
   ],
   imports: [
     BrowserModule,
