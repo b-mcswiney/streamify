@@ -1,0 +1,60 @@
+{
+    "movies": [
+        {
+            "id": 1,
+            "name": "Polar Express",
+            "genre": ["family", "adventure"],
+            "ratings": [8, 7, 9]
+        },
+        {
+            "id": 2,
+            "name": "Transformers - The Last Knight",
+            "genre": ["action", "sci fi"],
+            "ratings": [1,2,10]
+        },
+        {
+            "id": 3,
+            "name": "Dune - Part 1",
+            "genre": ["sci fi"],
+            "ratings": [9, 8, 10]
+        },
+        {
+            "id": 4,
+            "name": "Sonic 3",
+            "genre": ["action", "family"],
+            "ratings": [7, 8, 7]
+        },
+        {
+            "id": 5,
+            "name": "John Wick",
+            "genre": ["action"],
+            "ratings": [6, 8, 7]
+        },
+        {
+            "id": 6,
+            "name": "Moonfall",
+            "genre": ["Disaster"],
+            "ratings": [1, 1, 10]
+        }
+    ],
+    "users" : [
+        {
+            "id" : 1,
+            "name": "abc",
+            "password": "abc123",
+            "email": "example@email.com"
+        },
+        {
+            "id" : 2,
+            "name": "jeff",
+            "password": "jeff123",
+            "email": "jeff@email.com"
+        },
+        {
+            "id" : 2,
+            "name": "lucy",
+            "password": "lucy123",
+            "email": "lucy@email.com"
+        }
+    ]
+}
