@@ -1,0 +1,12 @@
+<p>movies works!</p>
+<div class="container">
+    <div *ngIf="movies.length > 0">
+        <div *ngFor="let movie of movies">
+            <app-moviedata [movie]="movie"></app-moviedata>
+            <p>{{movie | json}}<p>
+        </div>
+    </div>
+    <div *ngIf="movies.length <= 0">
+        <h1>NO MOVIES FOUND</h1>
+    </div>
+</div>

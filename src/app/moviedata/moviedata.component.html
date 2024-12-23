@@ -1,0 +1,7 @@
+<div class="movie">
+    <p>Title: {{movie.name}}</p>
+    <div class="genres">
+        <p class="genre" *ngFor="let genre of movie.genre">{{ genre }}</p>
+    </div>
+    <p>Overall Rating: {{ avgRating | number:'1.1-2' }}</p>
+</div>
