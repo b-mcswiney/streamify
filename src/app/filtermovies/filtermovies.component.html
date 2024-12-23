@@ -1,1 +1,45 @@
-<p>filtermovies works!</p>
+{{filter | json}}
+<div>
+    <h1>Filter</h1>
+    <form #filterform="ngForm" (submit)="filterMovies($event)">
+        <div>
+            <input type="text" class="form-control" placeholder="enter name"
+            name="name" [(ngModel)]="filter.name" #name="ngModel">
+        </div>
+        <div>
+            <h5>Genres</h5>
+            <ul>
+                <li>
+                    <label><input type="checkbox" [(ngModel)]="filter.genres.family" #family="ngModel" name="family"> Family </label>
+                </li>
+                <li>
+                    <label><input type="checkbox" [(ngModel)]="filter.genres.action" #family="ngModel" name="action"> Action </label>
+                </li>
+                <li>
+                    <label><input type="checkbox" [(ngModel)]="filter.genres.scifi" #family="ngModel" name="scifi"> Sci-fi </label>
+                </li>
+                <li>
+                    <label><input type="checkbox" [(ngModel)]="filter.genres.adventure" #family="ngModel" name="adventure"> Adventure </label>
+                </li>
+                <li>
+                    <label><input type="checkbox" [(ngModel)]="filter.genres.disaster" #family="ngModel" name="disaster"> Disaster </label>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <label>
+                    <h6>Max rating</h6>
+                    <input type="range" min="0" max="10" value="10" class="slider" [(ngModel)]="filter.ratingMax" #ratingMax="ngModel" name="ratingMax">
+                </label>
+            </div>
+            <div>
+                <label>
+                    <h6>Minimum rating</h6>
+                    <input type="range" min="0" max="10" value="0" [(ngModel)]="filter.ratingMin" #ratingMin="ngModel" name="ratingMin">
+                </label>
+            </div>
+        </div>
+        <button type="submit">Apply Filters</button>
+    </form>
+</div>

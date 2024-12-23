@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Filter } from './model/filter';
 
 @Component({
   selector: 'app-root',

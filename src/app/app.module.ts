@@ -7,6 +7,7 @@ import { MoviesComponent } from './movies/movies.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MoviedataComponent } from './moviedata/moviedata.component';
 import { FiltermoviesComponent } from './filtermovies/filtermovies.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FiltermoviesComponent } from './filtermovies/filtermovies.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
