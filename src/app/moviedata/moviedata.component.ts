@@ -15,14 +15,6 @@ export class MoviedataComponent {
   @Input()
   movie:Movie
     constructor() {
-      this.movie = {id:1,name:'' ,genre: [] ,ratings: []};
+      this.movie = {id:1,name:'' ,genre: [] ,ratings: [], avgrating: 0};
     }
-
-  ngOnInit() {
-    for(let rating of this.movie.ratings){
-      this.total = this.total + rating.rating;
-    }
-
-    this.avgRating = this.total/this.movie.ratings.length;
-  }
 }

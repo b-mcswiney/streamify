@@ -3,5 +3,5 @@
     <div class="genres">
         <p class="genre" *ngFor="let genre of movie.genre">{{ genre }}</p>
     </div>
-    <p>Rating (out of {{movie.ratings.length}} reviews): {{ avgRating | number:'1.1-2' }}</p>
+    <p>Rating (out of {{movie.ratings.length}} reviews): {{ movie.avgrating | number:'1.1-2' }}</p>
 </div>

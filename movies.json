@@ -4,37 +4,43 @@
             "id": 1,
             "name": "Polar Express",
             "genre": ["family", "adventure"],
-            "ratings": [{"user": 1, "rating": 7},{"user": 2, "rating": 10}]
+            "ratings": [{"user": 1, "rating": 7},{"user": 2, "rating": 10}],
+            "avgrating": 8.5 
         },
         {
             "id": 2,
             "name": "Transformers - The Last Knight",
             "genre": ["action", "sci fi"],
-            "ratings": [{"user": 1, "rating": 1},{"user": 2, "rating": 2},{"user": 3, "rating": 10}]
+            "ratings": [{"user": 1, "rating": 1},{"user": 2, "rating": 2},{"user": 3, "rating": 10}],
+            "avgrating": 4.33
         },
         {
             "id": 3,
             "name": "Dune - Part 1",
             "genre": ["sci fi"],
-            "ratings": [{"user": 1, "rating": 10},{"user": 3, "rating": 9}]
+            "ratings": [{"user": 1, "rating": 10},{"user": 3, "rating": 9}],
+            "avgrating": 9.5
         },
         {
             "id": 4,
             "name": "Sonic 3",
             "genre": ["action", "family"],
-            "ratings": [{"user": 1, "rating": 7},{"user": 2, "rating": 9},{"user": 3, "rating": 8}]
+            "ratings": [{"user": 1, "rating": 7},{"user": 2, "rating": 9},{"user": 3, "rating": 8}],
+            "avgrating": 8.0
         },
         {
             "id": 5,
             "name": "John Wick",
             "genre": ["action"],
-            "ratings": [{"user": 2, "rating": 4},{"user": 3, "rating": 8}]
+            "ratings": [{"user": 2, "rating": 4},{"user": 3, "rating": 8}],
+            "avgrating": 6.0
         },
         {
             "id": 6,
             "name": "Moonfall",
             "genre": ["Disaster"],
-            "ratings": [{"user": 1, "rating": 3},{"user": 2, "rating": 1},{"user": 3, "rating": 2}]
+            "ratings": [{"user": 1, "rating": 3},{"user": 2, "rating": 1},{"user": 3, "rating": 2}],
+            "avgrating": 2.0
         }
     ],
     "users" : [

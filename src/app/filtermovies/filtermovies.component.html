@@ -1,4 +1,4 @@
-{{filter | json}}
+<!-- {{filter | json}} -->
 <div>
     <h1>Filter</h1>
     <form #filterform="ngForm" (submit)="filterMovies($event)">
@@ -30,13 +30,13 @@
             <div>
                 <label>
                     <h6>Max rating</h6>
-                    <input type="range" min="0" max="10" value="10" class="slider" [(ngModel)]="filter.ratingMax" #ratingMax="ngModel" name="ratingMax">
+                    <input type="range" min="0" max="10" value="10" class="slider" [(ngModel)]="filter.ratingMax" #ratingMax="ngModel" name="ratingMax"> <a>{{filter.ratingMax}}</a>
                 </label>
             </div>
             <div>
                 <label>
                     <h6>Minimum rating</h6>
-                    <input type="range" min="0" max="10" value="0" [(ngModel)]="filter.ratingMin" #ratingMin="ngModel" name="ratingMin">
+                    <input type="range" min="0" max="10" value="0" [(ngModel)]="filter.ratingMin" #ratingMin="ngModel" name="ratingMin"> <a>{{filter.ratingMin}}</a>
                 </label>
             </div>
         </div>
