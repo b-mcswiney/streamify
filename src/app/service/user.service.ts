@@ -16,7 +16,11 @@ export class UserService {
   isAuthenticated():boolean{
     return !!localStorage.getItem("username");
   }
+  getCurrentUserId(){
+    return localStorage.getItem("id");
+  }
   logout(){
     localStorage.removeItem("username");
+    localStorage.removeItem("id");
   }
 }

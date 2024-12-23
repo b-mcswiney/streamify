@@ -11,14 +11,16 @@ import { Movie } from '../model/movie';
   styleUrl: './movies.component.css'
 })
 export class MoviesComponent {
-  movies:any;
+  movies:Movie[] = [];
   filteredList:Movie[] = [];
   masterList:Movie[] = [];
   filter:Filter = {name:'', genres: [], ratingMax: 10, ratingMin: 0};
+  username:any;
   
   constructor(public movieservice:MoviehttpService) {}
 
   ngOnInit(): void {
+    this.username = localStorage.getItem('id');
     this.movieservice.getAllMovies()
       .subscribe(resp => {
         console.log('fetched response');

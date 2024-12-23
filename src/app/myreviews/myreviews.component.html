@@ -1,1 +1,16 @@
-<p>myreviews works!</p>
+<div class="container">
+    <h1>{{username}}'s ratings</h1>
+    <div *ngIf="movies.length > 0" class="col-9">
+        <div *ngFor="let movie of movies">
+            <div class="movie">
+                <p>Title: {{movie.name}}</p>
+                <div class="genres">
+                    <p class="genre">Genres: </p><p class="genre" *ngFor="let genre of movie.genre">{{ genre }}</p>
+                </div>
+                <div *ngFor="let rating of movie.ratings">
+                    <p *ngIf="rating.user == userID"> Your rating: {{rating.rating}}/10</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
